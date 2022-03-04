@@ -6,10 +6,15 @@ public class PasswordChecker {
 		Scanner scnr = new Scanner(System.in);
 		System.out.println("Hello, user! Please input a password via the console.");
 		String password = scnr.next();
-		System.out.println(password);
+		//System.out.println(password);
 		 
-		//System.out.println("Password valid and accepted");
-		//System.out.println("Error");
+		if(7 <= password.length() && password.length() <= 12) {
+			System.out.println("Password valid and accepted");
+		} else {
+			System.out.println("Error");
+		}
+		
+		
 	}
 
 }
