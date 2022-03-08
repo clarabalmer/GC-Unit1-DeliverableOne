@@ -30,7 +30,7 @@ public class PasswordChecker {
 			if (password.contains("!")) {
 				bang = true;
 			}
-			for(int i = 0; i < password.length(); i++) {
+			for (int i = 0; i < password.length(); i++) {
 				if (Character.isUpperCase(password.charAt(i))) {
 					upper = true;
 				}
@@ -95,11 +95,11 @@ public class PasswordChecker {
 				
 				System.out.println(needs);
 			}
-		
 		}
+		scnr.close();
 	}
 	
-	/* First version below
+	/* First version
 	public static void main(String[] args) {
 		Scanner scnr = new Scanner(System.in);
 		System.out.println("Hello, user! Please input a password via the console.");
